@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+/* Base Color */
+  --cls-darkgreen: #2C3930;
+  --cls-lightgreen: #3F4F44;
+  --cls-lightbrown: #A27B5C;
+  --cls-cream: #DCD7C9;
+  --cls-black: #1E1E1E;
+  --cls-white: #FFFFFF;
+}
+
+@layer base {
+  *,
+  *::before,
+  ::after {
+    @apply box-border m-0 p-0;
+  }
+
+  body {
+    font-family: "Noto Sans", sans-serif;
+    @apply bg-[var(--cls-white)];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg text-white bg-blue-500;
+  }
+}
+
+@layer utilities {
+  /* / utility classes /
+  / login /
+  / register /
+  / home /
+  / banner /
+  / add-to-cart /
+  / purchase /
+  / profile /
+  / dashboard /
+  / about-contract / */
+}
+
+
