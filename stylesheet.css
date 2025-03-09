@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 :root {
 /* Base Color */
@@ -35,9 +35,17 @@
   / login /
   / register /
   / home /
-  / banner /
-  / add-to-cart /
-  / purchase /
+  / banner / */
+  .add-to-cart{
+    @apply text-xl
+  }
+  .box-add-to-cart{
+    @apply bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] rounded-[10px] space-y-2;
+  }
+  .tag-category{
+    @apply bg-[var(--cls-black)] p-[8px] rounded-[8px]
+  }
+  /* / purchase /
   / profile /
   / dashboard /
   / about-contract / */
