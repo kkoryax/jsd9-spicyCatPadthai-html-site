@@ -1,14 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-/* Base Color */
-  --cls-darkgreen: #2C3930;
-  --cls-lightgreen: #3F4F44;
-  --cls-lightbrown: #A27B5C;
-  --cls-cream: #DCD7C9;
-  --cls-black: #1E1E1E;
-  --cls-white: #FFFFFF;
+  /* Base Color */
+  --cls-darkgreen: #2c3930;
+  --cls-lightgreen: #3f4f44;
+  --cls-lightbrown: #a27b5c;
+  --cls-cream: #dcd7c9;
+  --cls-black: #1e1e1e;
+  --cls-white: #ffffff;
 }
 
 @layer base {
@@ -23,7 +23,9 @@
     @apply bg-[var(--cls-white)];
   }
 }
-
+h3 {
+  @apply text-xl pb-3 font-bold;
+}
 @layer components {
   .btn-primary {
     @apply px-4 py-2 rounded-lg text-white bg-blue-500;
@@ -41,6 +43,7 @@
   / profile /
   / dashboard /
   / about-contract / */
+  .footer {
+    @apply bg-[var(--cls-darkgreen)] text-[var(--cls-cream)] px-[24px] pt-[16px];
+  }
 }
-
-
