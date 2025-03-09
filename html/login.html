@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
+    <main class="flex flex-col justify-center items-center">
+        <section>
+            <h2 class="text-6xl font text-center p-6 m-6">LOGO</h2>
+            <p class="hidden">Welcome to bookstore Everything in One place"</p>
+        </section>
+        <section
+            class="flex flex-col justify-center items-center w-screen h-fit m-4 p-8 bg-[var(--cls-lightbrown)] rounded-t-3xl">
+            <h2 class="text-3xl font-bold">Login</h2>
+            <p class="justify-center items-center text-center p-4 w-[30ch]">Welcome to bookstore Everything in One place</p>
+            <form action="" class="flex flex-col justify-center items-center" method="get">
+                <input type="email" placeholder="Username or Email"
+                    class="px-4 py-1 bg-[var(--cls-white)] mb-4">
+                <input type="password" placeholder="Password"
+                    class="px-4 py-1 bg-[var(--cls-white)] mb-4">
+                <a href="/html/register.html"
+                    class="mb-2">
+                    Forget your password?</a>
+                <button type="submit"
+                class="font-bold px-24 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-lightgreen)] hover:cursor-pointer">
+                Login</button>
+                <div class="grid grid-cols-3 gap-4 mb-4 items-center justify-center">
+                    <hr>
+                    <p>OR</p>
+                    <hr>
+                </div>
+                <a href="/html/register.html"
+                class="font-bold px-20 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[#2E648F] hover:cursor-pointer">
+                New Account</a>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
