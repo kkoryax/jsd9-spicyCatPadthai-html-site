@@ -7,50 +7,60 @@
     <link rel="stylesheet" href="../stylesheet.css">
 </head>
 <body>
-    <main>
-        <!-- Profile Hero -->
-         <section class="profile-hero bg-[#cf55da]">
-            <div>
-                <h1 class="place-content-center">My Account</h1>
+    <!-- mobile version -->
+    <header></header>
+    <main class="sm:hidden  bg-[var(--cls-cream)] p-4 h-auto: w-auto">
+      
+        <!-- Profile Hero Mobile -->
+         <section class="profile-hero">
+            <div class="flex-col">
+                <h1 class="p-2 text-center font-extrabold text-3xl">My Account</h1>
                 <img
-                src=""
+                src="https://placehold.co/200x200"
                 alt=""
-                class=""
+                class="pb-8 mx-auto"
                 >
 
             </div>
          </section>
 
-         <!-- Profile details -->
-         <section class="profile-details">
-            <div>
-                <h2>Profile</h2>
-                <form>
-                    <label for ="Name">ชื่อ</label><br>
-                    <input type="text" id="name" value="Earn" required><br>
-                    <label for ="email">อีเมล</label><br>
-                    <input type="text" id="email" value="Earn@gmail.com" required><br>
-                    <label for ="phone">เบอร์</label><br>
-                    <input type="tel" id="phone" value="081234567" required><br>
+         <!-- Profile details Mobile -->
+         <section class="profile-details mx-4 pt-4 px-4 rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
+            <h2 class="text-center text-2xl font-bold p-2">Profile</h2>
+            <div class="flex justify-center text-xl">
+                <form class="space-y-2">
+                    <div class="flex">
+                        <label for ="Name" class="font-bold p-2">ชื่อ:</label><br>
+                        <input type="text" id="name"  value="Earn" required><br>
+                    </div>
+                    <div class="flex">
+                        <label for ="email" class="font-bold p-2">อีเมล:</label><br>
+                        <input type="text" id="email"  value="Earn@gmail.com" required><br>
+                    </div>
+                    <div class="flex">
+                      <label for ="phone" class="font-bold p-2">เบอร์:</label><br>
+                      <input type="tel" id="phone" value="081234567" required><br>
+                    </div>
                 </form>
             </div>
+            <a href ="#" class = "flex justify-end underline hover:font-bold">Change profile settings</a> <br>
          </section>
 
-         <!-- History-->
-          <section>
+         <!-- History Mobile -->
+          <section class ="m-4 p-4 rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] text-2xl font-bold text-center hover:bg-[var(--cls-darkbrown)] cursor-pointer" onclick="location.href='purchase.html';">
             <div>
-              <button onclick="location.href='add-to-cart.html';">My cart</button>  <!-- change to html purchase -->
+              <button >My cart →</button>
             </div>
           </section>
 
-        <!-- Settings -->
+        <!-- Settings Mobile-->
           <section>
-            <div>
-              <a href ="#">Change Password</a> <br>
-              <a href ="#">Change Settings</a> <br>
-              <button onclick="location.href='login.html';">Sign out</button>
+            <div class="mx-4 text-center">
+              <a href ="#" class = "underline hover:font-bold">Change Password</a> <br>
+              <button onclick="location.href='login.html';" class="m-2 px-4 bg-[var(--cls-blue)] text-[var(--cls-white)] rounded-2xl hover:bg-[var(--cls-darkblue)] cursor-pointer">Sign out</button>
             </div>
           </section>
     </main>
+    <footer></footer>
 </body>
 </html>
