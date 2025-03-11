@@ -3,26 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manga Store</title>
+    <title>Katsu Book</title>
     <link rel="stylesheet" href="/stylesheet.css" />
     <!-- <style>
-        *{
-            outline: auto;
-        }
+      * {
+        outline: auto;
+      }
     </style> -->
   </head>
   <body>
     <section class="add-to-cart">
       <div class="grid grid-cols-1 gap-4">
-        <div>
-          <img src="" alt="book-cover" />
+        <div class="grid grid-cols-1">
+          <img
+            src="/assets/book-cover-eclipes_vol32.jpg"
+            alt="book-cover"
+            class="p-5 w-[100%]"
+          />
         </div>
         <div class="box-add-to-cart">
           <h2>Eclipse Hunters</h2>
-          <p>Vol.32</p>
-          <p>Kenji Nakamura</p>
-          <p>฿160.00</p>
-          <div class="grid grid-cols-4 gap-4">
+          <p class="text-2xl">Vol.32</p>
+          <p class="text-2xl">Kenji Nakamura</p>
+          <p class="text-2xl">฿160.00</p>
+          <div class="grid grid-cols-4 gap-4 mb-5">
             <p>Quantity</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +56,7 @@
         </div>
         <div class="box-add-to-cart">
           <h3>Book summery</h3>
-          <p>
+          <p class="mb-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
             porro, iusto reprehenderit enim sapiente cum autem quam deserunt
             ratione distinctio dicta asperiores placeat. Dignissimos ipsum unde
@@ -66,24 +70,32 @@
             illum quasi sunt impedit corporis, nihil qui et a deserunt.
           </p>
 
-          <h4>Category</h4>
+          <h4 class="mb-2">Category</h4>
           <span class="tag-category">Adventure</span>
           <span class="tag-category">Horror</span>
         </div>
         <div class="box-add-to-cart flex flex-col gap-3">
           <h3>Other books you may like</h3>
-          <div>
-            <img src="" alt="book-cover" />
+          <div class="grid grid-cols-1">
+            <img
+              src="/assets/book-cover-eclipes_vol34.jpg"
+              alt="book-cover"
+              class="mb-2.5"
+            />
             <p class="flex flex-col justify-center">
-              <span> Eclips Hunters Vol.34 </span>
+              <span> Eclipse Hunters Vol.34 </span>
               <span>Kenji Nakamura</span>
               <span>฿160</span>
             </p>
           </div>
           <div>
-            <img src="" alt="book-cover" />
+            <img
+              src="/assets/book-cover-eclipes_vol20.jpg"
+              alt="book-cover"
+              class="mb-2.5"
+            />
             <p class="flex flex-col justify-center">
-              <span> Eclips Hunters Vol.20 </span>
+              <span> Eclipse Hunters Vol.20 </span>
               <span>Kenji Nakamura</span>
               <span>฿160</span>
             </p>

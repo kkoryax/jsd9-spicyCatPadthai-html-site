@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 :root {
-/* Base Color */
-  --cls-darkgreen: #2C3930;
-  --cls-lightgreen: #3F4F44;
-  --cls-lightbrown: #A27B5C;
-  --cls-cream: #DCD7C9;
-  --cls-black: #1E1E1E;
-  --cls-white: #FFFFFF;
+  /* Base Color */
+  --cls-darkgreen: #2c3930;
+  --cls-lightgreen: #3f4f44;
+  --cls-lightbrown: #a27b5c;
+  --cls-darkbrown: #775437;
+  --cls-blue: #2e648f;
+  --cls-darkblue: #234e70;
+  --cls-cream: #dcd7c9;
+  --cls-black: #1e1e1e;
+  --cls-white: #ffffff;
 }
-
 @layer base {
   *,
   *::before,
@@ -19,11 +21,29 @@
   }
 
   body {
-    font-family: "Noto Sans", sans-serif;
-    @apply bg-[var(--cls-white)];
+    font-family: "Noto Sans", "Noto Sans Thai", sans-serif;
+    @apply bg-[var(--cls-cream)];
   }
 }
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold;
+}
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-2xl;
+}
 
+h3 {
+  @apply text-xl;
+}
+h4 {
+  @apply text-lg;
+}
 @layer components {
   .btn-primary {
     @apply px-4 py-2 rounded-lg text-white bg-blue-500;
@@ -36,19 +56,17 @@
   / register /
   / home /
   / banner / */
-  .add-to-cart{
-    @apply text-xl
+  .add-to-cart {
+    @apply text-xl;
   }
-  .box-add-to-cart{
+  .box-add-to-cart {
     @apply bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] rounded-[10px] space-y-2;
   }
-  .tag-category{
-    @apply bg-[var(--cls-black)] p-[8px] rounded-[8px]
+  .tag-category {
+    @apply bg-[var(--cls-black)] p-[8px] rounded-[8px] text-base;
   }
   /* / purchase /
   / profile /
   / dashboard /
   / about-contract / */
 }
-
-
