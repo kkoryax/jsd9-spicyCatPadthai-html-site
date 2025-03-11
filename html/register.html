@@ -9,34 +9,36 @@
 <body>
     <main class="bg-[var(--cls-cream)]">
         <section class="flex p-8 justify-center items-center">
-            <p>LOGO</p>
+            <img src="/assets/logo_katsubook.png" alt="logo Katsu Book"
+            class="w-50">
         </section>
         <section class="flex flex-col pb-8 rounded-t-2xl bg-[var(--cls-lightbrown)]">
-            <h2 class="text-3xl font-bold text-center m-4">Register</h2>
-            <div class="flex justify-center items-center ml-12">
+            <h2 class="text-2xl font-bold text-center m-4">Register</h2>
+            <div class="flex justify-center items-center">
                 <form action="" method="post"
-                    class="flex flex-col gap-4 justify-center items-start mx-12">
-                    <div class="flex flex-row gap-8">
-                        <label for="first_name">First Name :</label>
+                    class="flex flex-col gap-4 justify-center items-start mb-8">
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="first_name" class="block w-35 text-right">First Name :</label>
                         <input id="first_name" type="text" placeholder="Your First Name"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-8">
-                        <label for="last_name">Last Name :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="last_name" class="block w-35 text-right">Last Name :</label>
                         <input id="last_name" type="text" placeholder="Your Last Name"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-10">
-                        <label for="date_of_birth">Birth Date :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="date_of_birth" class="block w-35 text-right">Birth Date :</label>
                         <input id="date_of_birth" type="date" placeholder=""
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="w-53 px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="gender" class="block w-35 text-right">Gender :</label>
                         <ul class="flex flex-row gap-4">
-                            <li>
-                                <label for="gender">Gender :</label>
-                            </li>
-                            <li class="flex flex-row text-center ml-10 gap-2">
+                            <li class="flex flex-row text-center gap-2">
                                 <input type="radio" id="gender_male" name="gender">
                                 <p>M</p>
                             </li>
@@ -46,49 +48,59 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="flex flex-row gap-18">
-                        <label for="email">Email :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="email" class="block w-35 text-right">Email :</label>
                         <input id="email" type="email" placeholder="Your Email"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-10">
-                        <label for="password">Password :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="password" class="block w-35 text-right">Password :</label>
                         <input type="password" placeholder="Your Password"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-4">
-                        <label for="confirm_password">Confirm Password :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="confirm_password" class="block w-35 text-right">Confirm Password :</label>
                         <input type="password" placeholder="Confirm Password"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-14">
-                        <label for="address">Address :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="address" class="block w-35 text-right">Address :</label>
                         <input id="address" type="text" placeholder="Your Address"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-4">
-                        <label for="phone_number">Phone Number :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="phone_number" class="block w-35 text-right">Phone Number :</label>
                         <input id="phone_number" type="tel" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-14">
-                        <label for="zipcode">ZIP code :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="zipcode" class="block w-35 text-right">ZIP code :</label>
                         <input type="text" placeholder="ZIP Code" pattern="[0-9]{5}" maxlength="5"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-21">
-                        <label for="city">City :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="city" class="block w-35 text-right">City :</label>
                         <input type="text" placeholder="City"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex flex-row gap-14">
-                        <label for="country">Country :</label>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="country" class="block w-35 text-right">Country :</label>
                         <input type="text" placeholder="country"
-                        class="px-2 py-1 bg-[var(--cls-white)]" required>
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
+                    <div class="flex justify-center items-center ml-16">
                         <button type="submit"
-                        class="font-bold w-64 py-1 px-6 rounded-2xl text-[var(--cls-white)] bg-[#2E648F] hover:cursor-pointer"
-                        >Create</button>
+                            class="font-bold w-64 py-1 px-6 rounded-2xl text-[var(--cls-white)] bg-[#2E648F] hover:cursor-pointer"
+                            >Create</button>
+                    </div>
                 </form>
             </div>
         </section>
