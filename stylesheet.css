@@ -1,28 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
-  /* Base Color */
-  --cls-darkgreen: #2c3930;
-  --cls-lightgreen: #3f4f44;
+/* Base Color */
+  --cls-darkgreen: #2C3930;
+  --cls-lightgreen: #3F4F44;
+  --cls-lightbrown: #A27B5C;
   --cls-darkbrown: #775437;
-  --cls-blue: #2e648f;
+  --cls-blue: #2E648F;
   --cls-darkblue: #234e70;
-  --cls-cream: #dcd7c9;
-  --cls-black: #1e1e1e;
-  --cls-white: #ffffff;
+  --cls-cream: #DCD7C9;
+  --cls-black: #1E1E1E;
+  --cls-white: #FFFFFF;
 }
 
 @layer base {
   *,
-  *::before,
+  ::before,
   ::after {
     @apply box-border m-0 p-0;
   }
 
   body {
-    font-family: "Noto Sans", sans-serif;
-    @apply bg-[var(--cls-white)];
+    font-family: "Noto Sans","Noto Sans Thai", sans-serif;
+    @apply bg-[var(--cls-cream)];
   }
 }
 
@@ -31,6 +32,7 @@
     @apply px-4 py-2 rounded-lg text-white bg-blue-500;
   }
 }
+
 
 @layer utilities {
   /* / utility classes /

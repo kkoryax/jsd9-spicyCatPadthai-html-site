@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheet.css" />
-
     <title>Katsu Book</title>
   </head>
   <body>
     <header>
-      <div class="nav-bar flex flex-row justify-evenly h-[64px]">
+      <div class="nav-bar flex flex-row justify-evenly h-[64px] py-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="auto"
           viewBox="0 -960 960 960"
           width="64px"
           fill="#dcd7c9"
+          href="javascript:void(0);"
+          class="icon"
+          onclick="navFunction()"
         >
+          >
           <path
             d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
           />
@@ -48,6 +51,34 @@
           <span class="text-xl">1</span>
         </button>
       </div>
+      <!-- Top Navigation Menu -->
+      <div class="overflow-hidden relative text-sm">
+        <div
+          id="myLinks"
+          class="py-3 leading-4 bg-[#3f4f44] hidden text-[#ffffff] no-underline"
+        >
+          <a
+            href="#signin"
+            class="block p-3 mb-3 rounded-xl w-[40%] bg-[#dcd7c9] hover:bg-[#dcd7c97c] text-[#1e1e1e] justify-self-center text-center"
+            >Sign in</a
+          >
+          <a
+            href="#register"
+            class="block p-3 rounded-xl w-[40%] bg-[#2c3930] hover:bg-[#2c393095] justify-self-center text-center"
+            >Register</a
+          >
+        </div>
+      </div>
+      <script>
+        function navFunction() {
+          const x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
     </header>
   </body>
 </html>
