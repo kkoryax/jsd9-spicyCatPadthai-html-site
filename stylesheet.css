@@ -25,25 +25,6 @@
     @apply bg-[var(--cls-cream)];
   }
 }
-h1,
-h2,
-h3,
-h4 {
-  @apply font-bold;
-}
-h1 {
-  @apply text-3xl;
-}
-h2 {
-  @apply text-2xl;
-}
-
-h3 {
-  @apply text-xl;
-}
-h4 {
-  @apply text-lg;
-}
 @layer components {
   .btn-primary {
     @apply px-4 py-2 rounded-lg text-white bg-blue-500;
