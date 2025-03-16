@@ -7,6 +7,67 @@
     <link rel="stylesheet" href="../stylesheet.css">
 </head>
 <body>
+<!-- Desktop version -->
+<header></header>
+<main class="hidden sm:flex flex-col justify-center p-8  min-h-screen w-full">
+
+
+  <h1 class="p-4 text-center font-extrabold text-3xl w-1/4">My Account</h1>
+  <div class ="flex flex-row gap-4 items-center ">
+    <!-- Profile Hero Desktop -->
+    <section class="profile-hero w-1/4 flex flex-col ">
+
+        <div class="text-center">
+          <img
+            src="https://placehold.co/200x200"
+            alt="user-profile"
+            class="py-4 mx-auto"
+          >
+          <a href ="#" class = "underline hover:font-bold">Change Password</a> <br>
+          <button onclick="location.href='login.html';" class="m-2 mt-8 px-4 bg-[var(--cls-blue)] text-[var(--cls-white)] rounded-2xl hover:bg-[var(--cls-darkblue)] cursor-pointer">Sign out</button>
+        </div>
+    </section>
+
+
+    <!-- Profile and my cart Desktop -->
+    <section class="profile-cart w-3/4 mx-8">
+      <div class="profile-details mt-4 pt-4 px-4 rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
+          <h2 class="text-center text-2xl font-bold p-2">Profile</h2>
+          <div class="flex justify-center text-xl">
+              <form class="space-y-2 w-md">
+                  <div class="flex">
+                      <label for ="Name" class="font-bold p-2">ชื่อ:</label><br>
+                      <input type="text" id="name"  value="Earn" required><br>
+                  </div>
+                  <div class="flex">
+                      <label for ="email" class="font-bold p-2">อีเมล:</label><br>
+                      <input type="text" id="email"  value="Earn@gmail.com" required><br>
+                  </div>
+                  <div class="flex">
+                    <label for ="phone" class="font-bold p-2">เบอร์:</label><br>
+                    <input type="tel" id="phone" value="081234567" required><br>
+                  </div>
+                  <div class="flex">
+                    <label for ="address" class="font-bold px-2">ที่อยู่:</label><br>
+                    <textarea type="text" id="address" value="" required rows="3" class="w-80">123/45 หมู่ 6 ตำบลบางเขน อำเภอเมือง จังหวัดนนทบุรี 11000 </textarea><br>
+                  </div>
+              </form>
+          </div>
+          <a href ="#" class = "flex justify-end underline hover:font-bold">Change profile settings</a> <br>
+      </div>
+      <div class ="cart my-4 p-4 rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] text-2xl font-bold text-center hover:bg-[var(--cls-darkbrown)] cursor-pointer" onclick="location.href='purchase.html';">
+        <button >My cart →</button>
+      </div>
+    </section>
+  </div>
+
+
+
+
+</main>
+<footer></footer>
+
+
     <!-- mobile version -->
     <header></header>
     <main class="sm:hidden  bg-[var(--cls-cream)] p-4 h-auto: w-auto">
@@ -28,22 +89,26 @@
          <section class="profile-details pt-4 px-4 rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
             <h2 class="text-center text-2xl font-bold p-2">Profile</h2>
             <div class="flex justify-center text-xl">
-                <form class="space-y-2">
+                <form class="space-y-4">
                     <div class="flex">
-                        <label for ="Name" class="font-bold p-2">ชื่อ:</label><br>
+                        <label for ="Name" class="font-bold px-2">ชื่อ:</label><br>
                         <input type="text" id="name"  value="Earn" required><br>
                     </div>
                     <div class="flex">
-                        <label for ="email" class="font-bold p-2">อีเมล:</label><br>
+                        <label for ="email" class="font-bold px-2">อีเมล:</label><br>
                         <input type="text" id="email"  value="Earn@gmail.com" required><br>
                     </div>
                     <div class="flex">
-                      <label for ="phone" class="font-bold p-2">เบอร์:</label><br>
+                      <label for ="phone" class="font-bold px-2">เบอร์:</label><br>
                       <input type="tel" id="phone" value="081234567" required><br>
+                    </div>
+                    <div class="flex">
+                      <label for ="address" class="font-bold px-2">ที่อยู่:</label><br>
+                      <textarea type="text" id="address" value="" required rows="3" >123/45 หมู่ 6 ตำบลบางเขน อำเภอเมือง จังหวัดนนทบุรี 11000 </textarea><br>
                     </div>
                 </form>
             </div>
-            <a href ="#" class = "flex justify-end underline hover:font-bold">Change profile settings</a> <br>
+            <a href ="#" class = "flex justify-end underline hover:font-bold pt-4">Change profile settings</a> <br>
          </section>
 
          <!-- History Mobile -->
