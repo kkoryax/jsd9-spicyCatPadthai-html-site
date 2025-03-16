@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katsu Book</title>
     <link rel="stylesheet" href="/stylesheet.css" />
-    <!-- <style>
-      * {
-        outline-style: dashed;
-        outline-color: brown;
-      }
-    </style> -->
   </head>
   <body>
-    <section class="add-to-cart">
+    <section>
       <div
         class="overflow-hidden flex flex-row p-1 justify-between bg-[var(--cls-lightgreen)] fixed bottom-0 w-[100%]"
       >
@@ -24,22 +18,25 @@
           Add to Cart
         </button>
       </div>
-      <div class="grid grid-cols-1 gap-4">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 md:p-10 gap-4 md:px-20 md:gap-10"
+      >
         <div class="grid grid-cols-1">
           <img
             src="/assets/book-cover-eclipes_vol32.jpg"
             alt="book-cover"
-            class="p-5 w-[100%] object-contain"
+            class="p-5 w-[100%] md:w-[100%] lg:w-[70%] md:place-self-center object-contain shadow-lg"
           />
         </div>
         <div
-          class="bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] rounded-[10px] space-y-2"
+          class="bg-[var(--cls-lightbrown)] text-[var(--cls-white)] p-[32px] rounded-[10px] space-y-2"
         >
-          <p class="text-2xl font-bold">Eclipse Hunters Vol.32</p>
+          <p class="text-2xl font-bold md:text-3xl">Eclipse Hunters Vol.32</p>
           <p class="text-2xl">Kenji Nakamura</p>
-          <p class="text-3xl py-5">฿160.00</p>
-          <div class="flex flex-row space-x-8 pb-15">
-            <p class="text-xl">Quantity</p>
+          <p class="text-3xl md:text-5xl py-5">฿160.00</p>
+
+          <div class="flex flex-row space-x-8 pb-15 md:py-5 md:items-center">
+            <p class="text-xl md:text-2xl">Quantity</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="25px"
@@ -50,7 +47,7 @@
             >
               <path d="M200-440v-80h560v80H200Z" />
             </svg>
-            <span class="place-self-center">1</span>
+            <span class="place-self-center md:text-2xl">1</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="25px"
@@ -65,13 +62,13 @@
             </svg>
           </div>
           <button
-            class="px-4 py-2 mb-4 rounded-lg text-white text-lg shadow bg-[var(--cls-blue)] hover:bg-[var(--cls-darkblue)]"
+            class="px-4 py-2 mb-4 rounded-lg text-white text-lg md:text-2xl md:mt-10 shadow bg-[var(--cls-blue)] hover:bg-[var(--cls-darkblue)]"
           >
             Add to Cart
           </button>
         </div>
         <div
-          class="bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] rounded-[10px] space-y-2"
+          class="bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] md:mb-[50px] rounded-[10px] space-y-2"
         >
           <h3 class="font-bold">Book summery</h3>
           <p class="mb-5">
@@ -97,32 +94,35 @@
           >
         </div>
         <div
-          class="bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] mb-[50px] rounded-[10px] space-y-2 flex flex-col gap-3"
+          class="bg-[var(--cls-lightbrown)] text-[var(--cls-white)] px-[24px] py-[16px] mb-[50px] md:pt-[18px] rounded-[10px] space-y-2 flex flex-col gap-3"
         >
           <h3>Other books you may like:</h3>
-          <div class="grid grid-cols-1">
-            <img
-              src="/assets/book-cover-eclipes_vol34.jpg"
-              alt="book-cover"
-              class="mb-2.5"
-            />
-            <p class="flex flex-col justify-center">
-              <span> Eclipse Hunters Vol.34 </span>
-              <span>Kenji Nakamura</span>
-              <span>฿160</span>
-            </p>
-          </div>
-          <div>
-            <img
-              src="/assets/book-cover-eclipes_vol20.jpg"
-              alt="book-cover"
-              class="mb-2.5"
-            />
-            <p class="flex flex-col justify-center">
-              <span> Eclipse Hunters Vol.20 </span>
-              <span>Kenji Nakamura</span>
-              <span>฿160</span>
-            </p>
+          <div class="grid grid-cols-1 md:flex md:flex-row md:py-5 gap-2">
+            <div>
+              <img
+                src="/assets/book-cover-eclipes_vol34.jpg"
+                alt="book-cover"
+                class="mb-2.5 md:max-w-[50%] md:place-self-center shadow-xl"
+              />
+              <p class="flex flex-col justify-center md:text-center">
+                <span> Eclipse Hunters Vol.34 </span>
+                <span>Kenji Nakamura</span>
+                <span>฿160</span>
+              </p>
+            </div>
+
+            <div>
+              <img
+                src="/assets/book-cover-eclipes_vol20.jpg"
+                alt="book-cover"
+                class="mb-2.5 md:max-w-[50%] md:place-self-center shadow-xl"
+              />
+              <p class="flex flex-col justify-center md:text-center">
+                <span> Eclipse Hunters Vol.20 </span>
+                <span>Kenji Nakamura</span>
+                <span>฿160</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
