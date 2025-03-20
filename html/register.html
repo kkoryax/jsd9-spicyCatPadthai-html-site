@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
-    <main class="bg-[var(--cls-cream)]">
-        <section class="flex p-8 justify-center items-center">
+    <main class="flex flex-col bg-[var(--cls-cream)] h-screen w-screen justify-center items-center">
+        <section class="flex p-8 justify-center items-center md:hidden">
             <img src="/assets/logo_katsubook.png" alt="logo Katsu Book"
             class="w-50">
         </section>
-        <section class="flex flex-col pb-8 rounded-t-2xl bg-[var(--cls-lightbrown)]">
-            <h2 class="text-2xl font-bold text-center m-4">Register</h2>
+        <section class="flex flex-col justify-center pb-8 rounded-t-2xl bg-[var(--cls-lightbrown)] w-screen md:h-fit md:w-120 md:rounded-2xl">
+            <h2 class="text-2xl font-bold text-center m-8 md:text-4xl">Register</h2>
             <div class="flex justify-center items-center">
                 <form action="" method="post"
-                    class="flex flex-col gap-4 justify-center items-start mb-8">
+                    class="flex flex-col gap-4 justify-center items-start">
                     <div class="flex justify-center items-center gap-4">
                         <label for="first_name" class="block w-35 text-right">First Name :</label>
                         <input id="first_name" type="text" placeholder="Your First Name"
@@ -80,12 +80,6 @@
                     </div>
 
                     <div class="flex justify-center items-center gap-4">
-                        <label for="zipcode" class="block w-35 text-right">ZIP code :</label>
-                        <input type="text" placeholder="ZIP Code" pattern="[0-9]{5}" maxlength="5"
-                            class="px-2 py-1 bg-[var(--cls-white)]" required>
-                    </div>
-
-                    <div class="flex justify-center items-center gap-4">
                         <label for="city" class="block w-35 text-right">City :</label>
                         <input type="text" placeholder="City"
                             class="px-2 py-1 bg-[var(--cls-white)]" required>
@@ -96,9 +90,9 @@
                         <input type="text" placeholder="country"
                             class="px-2 py-1 bg-[var(--cls-white)]" required>
                     </div>
-                    <div class="flex justify-center items-center ml-16">
+                    <div class="flex justify-center items-center ml-16 mt-4">
                         <button type="submit"
-                            class="font-bold w-64 py-1 px-6 rounded-2xl text-[var(--cls-white)] bg-[#2E648F] hover:cursor-pointer"
+                            class="font-bold w-64 py-1 px-6 rounded-2xl text-[var(--cls-white)] bg-[var(--cls-blue)] hover:cursor-pointer"
                             >Create</button>
                     </div>
                 </form>
