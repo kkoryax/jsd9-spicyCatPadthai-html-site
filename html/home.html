@@ -7,59 +7,82 @@
     <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
-    <main>
         <!-- Slider Section-->
-        <section class="flex flex-row justify-center items-center p-8 bg-[var(--cls-cream))]">
-            <div class="absolute w-120 h-60 outline z-1 bg-[var(--cls-white))]">
-                <p class="flex justify-center items-center h-full">HIGHTLIGHT</p>
-            </div>
-            <div class="w-120 h-60 outline">
-                <p class="flex justify-center items-center h-full">HIGHTLIGHT</p>
-            </div>
-            <div class="w-120 h-60 outline">
-                <p class="flex justify-center items-center h-full">HIGHTLIGHT</p>
-            </div>
+        <section class="flex flex-row justify-center items-center p-8 bg-[var(--cls-cream)]">
+            <article class="flex flex-row justify-center items-center p-1 max-w-full">
+                <div class="w-full h-60 md:h-80 lg:h-120 z-1">
+                    <img src="/assets/bangkoklegacy_banner.jpg" alt="" class="w-full h-full object-cover object-center">
+                </div>
         </section>
+
         <section class="flex flex-col justify-center items-center w-screen h-fit">
             <div class="flex flex-col justify-center items-start mb-4">
-                <h2 class="text-2xl mb-2 ml-20 w-fit">New Release</h2>
+                <h2 class="text-2xl font-bold mb-2 ml-20 w-fit md:text-4xl">New Release <span class="text-lg md:text-2xl">></span></h2>
+                <!--New Release Section-->
                 <article
-                class="flex flex-row flex-wrap justify-center p-8 mb-4 gap-8 rounded-3xl bg-[var(--cls-lightbrown)]">
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">NR-ITEM 1</p>
+                class="flex flex-row flex-wrap justify-center p-8 mb-4 gap-8 w-screen rounded-3xl bg-[var(--cls-lightbrown)] md:max-w-365">
+                    <div
+                    class="w-50 h-50 hover:cursor-pointer md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/supernova_2.jpg" alt="Super Nova">
+                        <p class="flex justify-center items-center mt-1 font-semibold">
+                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>Super Nova Vol.2</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">NR-ITEM 2</p>
+                    <div
+                    class="w-50 h-50 hover:cursor-pointer md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/sheik_12.jpg" alt="Sheik">
+                        <p class="flex justify-center items-center mt-1 font-semibold">
+                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>Sheik Vol.12</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">NR-ITEM 3</p>
+                    <div
+                    class="hidden md:flex md:flex-col w-50 hover:cursor-pointer md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/foodstriker_4.jpg" alt="Food Striker">
+                        <p class="hidden md:flex  justify-center items-center mt-1 font-semibold">
+                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>Food Striker Vol.4</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">NR-ITEM 4</p>
+                    <div
+                    class="hidden md:flex md:flex-col w-50 hover:cursor-pointer md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/jsd_4.jpg" alt="JSD">
+                        <p class="hidden md:flex justify-center items-center mt-1 font-semibold">
+                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>JSD Vol.4</p>
                     </div>
                 </article>
             </div>
             <div class="flex flex-col justify-center items-start mb-4">
-                <h2 class="text-2xl mb-2 ml-20 w-fit">All Content</h2>
+                <h2 class="text-2xl font-bold mb-2 ml-20 w-fit md:text-4xl">All Content <span class="text-lg md:text-2xl">></span></h2>
+                <!--All content Section-->
                 <article
-                class="flex flex-row flex-wrap justify-center p-8 mb-4 gap-8 rounded-3xl bg-[var(--cls-lightbrown)]">
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">C-ITEM 1</p>
+                class="flex flex-row flex-wrap justify-center p-8 mb-4 gap-8 max-w-240 rounded-3xl bg-[var(--cls-lightbrown)] md:max-w-365">
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/bangkoklegacy.jpg" alt="bangkok legacy">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Bangkok Legacy</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">C-ITEM 2</p>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/foodstriker.jpg" alt="food striker">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Food Striker</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">C-ITEM 3</p>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/hikarilove.jpg" alt="hikari love">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Hikari love</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">C-ITEM 4</p>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/jsd.jpg" alt="generation bootcamp">
+                        <p class="flex justify-center items-center mt-1 font-semibold">JSD</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">C-ITEM 5</p>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/katanaway.jpg" alt="katana way">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Katanaway</p>
                     </div>
-                    <div class="outline w-50 h-50">
-                        <p class="flex justify-center items-center h-full">C-ITEM 6</p>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/sheik.jpg" alt="sheik">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Sheik</p>
+                    </div>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/supernova.jpg" alt="sheik">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Super Nova</p>
+                    </div>
+                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80 hover:w-51 hover:h-51 hover:md:w-82 hover:md:h-82">
+                        <img src="/assets/untitled.jpg" alt="sheik">
+                        <p class="flex justify-center items-center mt-1 font-semibold">Untitled</p>
                     </div>
                 </article>
             </div>
