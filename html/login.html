@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
-    <main class="flex flex-col justify-center items-center bg-[var(--cls-cream)]">
-        <section class="flex p-8 justify-center items-center">
+    <main class="flex flex-col justify-center items-center bg-[var(--cls-cream)] md:flex-row md:h-screen md:gap-8 md:mx-8">
+        <section class="flex p-8 justify-center items-center md:flex-col">
             <img src="/assets/logo_katsubook.png" alt=""
             class="w-50">
-            <p class="hidden">Welcome to bookstore Everything in One place"</p>
+            <p class="hidden justify-center items-center md:flex">Welcome to bookstore Everything in One place</p>
         </section>
         <section
-            class="flex flex-col justify-center items-center w-screen h-fit mt-4 p-8 bg-[var(--cls-lightbrown)] rounded-t-3xl">
-            <h2 class="text-3xl font-bold">Login</h2>
-            <p class="justify-center items-center text-center p-4 w-[30ch]">Welcome to bookstore Everything in One place</p>
+            class="flex flex-col justify-center items-center w-screen h-fit mt-4 py-8 bg-[var(--cls-lightbrown)] rounded-t-3xl md:rounded-3xl md:w-105 md:pt-16">
+            <h2 class="text-3xl font-bold md:mb-4">Login</h2>
+            <p class="flex md:hidden justify-center items-center text-center p-4 w-[30ch]">Welcome to bookstore Everything in One place</p>
             <form action="" class="flex flex-col justify-center items-center" method="get">
-                <input type="email" placeholder="Username or Email"
-                    class="px-4 py-1 bg-[var(--cls-white)] mb-4" required>
+                <input type="email" placeholder="Email"
+                    class="px-4 py-1 w-80 bg-[var(--cls-white)] mb-4 md:w-80" required>
                 <input type="password" placeholder="Password"
-                    class="px-4 py-1 bg-[var(--cls-white)] mb-4" required>
+                    class="px-4 py-1 w-80 bg-[var(--cls-white)] mb-4 md:w-80" required>
                 <a href="/html/register.html"
                     class="mb-2">
                     Forget your password?</a>
                 <button type="submit"
-                class="font-bold px-24 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-lightgreen)] hover:cursor-pointer">
+                class="font-bold px-24 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-lightgreen)] hover:cursor-pointer hover:bg-[var(--cls-darkgreen)]">
                 Login</button>
                 <div class="grid grid-cols-3 gap-4 mb-4 items-center justify-center">
                     <hr>
@@ -34,7 +34,7 @@
                     <hr>
                 </div>
                 <a href="/html/register.html"
-                class="font-bold px-20 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[#2E648F] hover:cursor-pointer">
+                class="font-bold px-20 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-blue)] hover:cursor-pointer hover:bg-[var(--cls-darkblue)]">
                 New Account</a>
             </form>
         </section>
