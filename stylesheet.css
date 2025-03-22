@@ -6,6 +6,9 @@
   --cls-darkgreen: #2c3930;
   --cls-lightgreen: #3f4f44;
   --cls-lightbrown: #a27b5c;
+  --cls-darkbrown: #775437;
+  --cls-blue: #2e648f;
+  --cls-darkblue: #234e70;
   --cls-cream: #dcd7c9;
   --cls-black: #1e1e1e;
   --cls-white: #ffffff;
@@ -15,7 +18,7 @@
   *,
   *::before,
   ::after {
-    @apply box-border m-0 p-0;
+    @apply m-0 box-border p-0;
   }
 
   body {
@@ -24,11 +27,11 @@
   }
 }
 h3 {
-  @apply text-xl pb-3 font-bold;
+  @apply pb-3 text-xl font-bold;
 }
 @layer components {
   .btn-primary {
-    @apply px-4 py-2 rounded-lg text-white bg-blue-500;
+    @apply rounded-lg bg-blue-500 px-4 py-2 text-white;
   }
 }
 
@@ -44,6 +47,6 @@ h3 {
   / dashboard /
   / about-contract / */
   .footer {
-    @apply bg-[var(--cls-darkgreen)] text-[var(--cls-cream)] px-[24px] pt-[16px];
+    @apply bg-[var(--cls-darkgreen)] px-[24px] pt-[16px] text-[var(--cls-cream)];
   }
 }
