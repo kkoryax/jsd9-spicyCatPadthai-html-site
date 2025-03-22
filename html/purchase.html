@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,22 +6,25 @@
     <title>Katsu Book</title>
     <link rel="stylesheet" href="/stylesheet.css" />
   </head>
+
   <body>
-    <section class="m-[16px]">
-      <h2 class="text-3xl py-4">My Cart</h2>
+    <section class="mx-[18px] md:my-10 md:max-w-300 md:justify-self-center">
+      <h2 class="py-5 text-3xl">My Cart</h2>
       <div class="grid grid-cols-1 md:flex md:flex-row md:gap-6">
-        <div class="md:w-[60%] md:rounded-2xl max-sm:rounded-t-2xl bg-[#F5F5F5]">
+        <div
+          class="bg-[#F5F5F5] max-sm:rounded-t-2xl md:w-[60%] md:rounded-2xl"
+        >
           <div class="flex flex-row space-x-2 p-2 md:h-10">
             <div class="flex justify-baseline">
-              <label class="flex items-center cursor-pointer relative">
+              <label class="relative flex cursor-pointer items-center">
                 <input
                   type="checkbox"
                   checked
-                  class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[var(--cls-darkblue)] checked:bg-[var(--cls-darkblue)]"
+                  class="peer h-5 w-5 cursor-pointer appearance-none rounded border border-[var(--cls-darkblue)] shadow transition-all checked:bg-[var(--cls-darkblue)] hover:shadow-md"
                   id="check1"
                 />
                 <span
-                  class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white opacity-0 peer-checked:opacity-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,15 +47,15 @@
           </div>
           <div class="my-[32px] flex flex-col px-[8px] md:justify-start">
             <div class="flex flex-row">
-              <label class="flex items-start cursor-pointer relative">
+              <label class="relative flex cursor-pointer items-start">
                 <input
                   type="checkbox"
                   checked
-                  class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[var(--cls-darkblue)] checked:bg-[var(--cls-darkblue)]"
+                  class="peer h-5 w-5 cursor-pointer appearance-none rounded border border-[var(--cls-darkblue)] shadow transition-all checked:bg-[var(--cls-darkblue)] hover:shadow-md"
                   id="check1"
                 />
                 <span
-                  class="text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-[17px] translate-y-1"
+                  class="top-1/2 left-1/2 -translate-x-[17px] translate-y-1 transform text-white opacity-0 peer-checked:opacity-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,16 +75,16 @@
               </label>
               <img
                 src="/assets/book-cover-eclipes_vol34.jpg"
-                class="h-auto max-w-[45%] px-[8px] object-contain object-top"
+                class="h-auto max-w-[45%] object-contain object-top px-[8px]"
                 alt="Book Cover"
               />
-              <div class="flex w-[55%] flex-col px-[8px]">
-                <h3 class="pb-[8px] font-bold text-sm">
+              <div class="flex w-[55%] flex-col px-[8px] md:text-xl">
+                <h3 class="pb-[8px] text-sm font-bold md:text-xl">
                   Eclipse Hunters Vol: 32
                 </h3>
                 <p class="pb-[8px]">Kenji Nakamura</p>
                 <p>฿160.00</p>
-                <div class="grid grid-cols-3 py-4 place-self-start gap-3">
+                <div class="grid grid-cols-3 gap-3 place-self-start py-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="20px"
@@ -124,15 +127,15 @@
           </div>
           <div class="my-[32px] flex flex-col px-[8px]">
             <div class="flex flex-row">
-              <label class="flex items-start cursor-pointer relative">
+              <label class="relative flex cursor-pointer items-start">
                 <input
                   type="checkbox"
                   checked
-                  class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[var(--cls-darkblue)] checked:bg-[var(--cls-darkblue)]"
+                  class="peer h-5 w-5 cursor-pointer appearance-none rounded border border-[var(--cls-darkblue)] shadow transition-all checked:bg-[var(--cls-darkblue)] hover:shadow-md"
                   id="check1"
                 />
                 <span
-                  class="text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-[17px] translate-y-1"
+                  class="top-1/2 left-1/2 -translate-x-[17px] translate-y-1 transform text-white opacity-0 peer-checked:opacity-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -152,16 +155,16 @@
               </label>
               <img
                 src="/assets/book-cover-eclipes_vol20.jpg"
-                class="h-auto max-w-[45%] px-[8px] object-contain object-top"
+                class="h-auto max-w-[45%] object-contain object-top px-[8px]"
                 alt="Book Cover"
               />
-              <div class="flex w-[55%] flex-col px-[8px]">
-                <h3 class="pb-[8px] font-bold text-sm">
+              <div class="flex w-[55%] flex-col px-[8px] md:text-xl">
+                <h3 class="pb-[8px] text-sm font-bold md:text-xl">
                   Eclipse Hunters Vol: 20
                 </h3>
                 <p class="pb-[8px]">Kenji Nakamura</p>
                 <p>฿160.00</p>
-                <div class="grid grid-cols-3 py-4 place-self-start gap-3">
+                <div class="grid grid-cols-3 gap-3 place-self-start py-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="20px"
@@ -203,21 +206,23 @@
             </div>
           </div>
         </div>
-        <div class="md:w-[45%] md:py-[50px] md:rounded-2xl bg-[#F5F5F5] max-sm:rounded-b-2xl pb-3">
-          <div class="mx-8 leading-10 text-xl max-sm:mx-4">
-            <h2 class="max-sm:hidden text-4xl font-bold md:mb-14">
+        <div
+          class="bg-[#F5F5F5] pb-3 max-sm:rounded-b-2xl md:w-[45%] md:rounded-2xl md:py-[50px]"
+        >
+          <div class="mx-8 text-xl leading-10 max-sm:mx-4">
+            <h2 class="text-4xl font-bold max-sm:hidden md:mb-14">
               Order List
             </h2>
             <p class="flex justify-between">
               Quantity
               <span>2</span>
             </p>
-            <p class="flex justify-between text-2xl font-bold py-4">
+            <p class="flex justify-between py-4 text-2xl font-bold">
               Total
               <span>฿320.00</span>
             </p>
             <button
-              class="bg-[var(--cls-darkblue)] rounded-2xl text-xl text-[var(--cls-white)] p-2 flex w-[100%] justify-center md:mt-[200px] hover:bg-[var(--cls-blue)]"
+              class="flex w-[100%] justify-center rounded-2xl bg-[var(--cls-darkblue)] p-2 text-xl text-[var(--cls-white)] hover:bg-[var(--cls-blue)] md:mt-[200px]"
             >
               Proceed
             </button>
