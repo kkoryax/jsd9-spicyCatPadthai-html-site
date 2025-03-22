@@ -7,32 +7,22 @@
     <link rel="stylesheet" href="/stylesheet.css" />
   </head>
   <body>
-    <section>
+    <section class="md:flex md:max-w-400 md:justify-self-center">
       <div
-        class="fixed bottom-0 flex w-[100%] flex-row justify-between overflow-hidden bg-[var(--cls-lightgreen)] p-1"
-      >
-        <p class="p-2 text-2xl text-[var(--cls-white)]">฿160.00</p>
-        <button
-          class="my-1 rounded-lg bg-[var(--cls-blue)] px-4 text-lg text-white shadow hover:bg-[var(--cls-darkblue)]"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-10 md:p-10 md:px-20"
+        class="grid grid-cols-1 gap-4 md:gap-10 md:p-10 md:px-20 lg:grid-cols-2"
       >
         <div class="grid grid-cols-1">
           <img
-            src="/assets/book-cover-eclipes_vol32.jpg"
+            src="/assets/supernova_2.jpg"
             alt="book-cover"
-            class="w-[100%] object-contain p-5 shadow-lg md:w-[100%] md:place-self-center lg:w-[70%]"
+            class="w-[100%] object-contain p-5 shadow-lg md:place-self-center"
           />
         </div>
         <div
-          class="space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] p-[32px] text-[var(--cls-white)]"
+          class="space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] p-[32px] py-12 text-[var(--cls-white)] max-sm:pt-[30px]"
         >
-          <p class="text-2xl font-bold md:text-3xl">Eclipse Hunters Vol.32</p>
-          <p class="text-2xl">Kenji Nakamura</p>
+          <p class="text-2xl font-bold md:text-3xl">Supernova, Volume 2</p>
+          <p class="text-2xl">Kenji Suzuki</p>
           <p class="py-5 text-3xl md:text-5xl">฿160.00</p>
 
           <div class="flex flex-row space-x-8 pb-15 md:items-center md:py-5">
@@ -68,29 +58,19 @@
           </button>
         </div>
         <div
-          class="space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] px-[24px] py-[16px] text-[var(--cls-white)] md:mb-[50px]"
+          class="space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] px-[24px] py-[32px] text-[var(--cls-white)] md:mb-[50px]"
         >
-          <h3 class="font-bold">Book summery</h3>
+          <h3 class="text-xl font-bold">Description</h3>
           <p class="mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-            porro, iusto reprehenderit enim sapiente cum autem quam deserunt
-            ratione distinctio dicta asperiores placeat. Dignissimos ipsum unde
-            repellat rem aliquam temporibus iste? Fugit at vero ea eligendi enim
-            facilis veritatis id assumenda maxime cumque nihil molestiae
-            distinctio asperiores, odio aliquam obcaecati inventore possimus.
-            Impedit quisquam a in temporibus, porro recusandae reprehenderit
-            assumenda cupiditate mollitia cum cumque labore omnis placeat, vitae
-            dolore maxime dolor illum rem suscipit, quaerat et soluta! Eum
-            quibusdam sint cupiditate illo porro ut quia ullam accusamus quae ad
-            illum quasi sunt impedit corporis, nihil qui et a deserunt.
+            Young space explorer continues their journey, venturing into the
+            depths of the cosmos. They encounter fascinating celestial wonders,
+            learn about the mysteries of the universe, and face new challenges
+            as they navigate the vast expanse of space.
           </p>
 
-          <h4 class="mb-2 font-bold">Category</h4>
+          <h4 class="mb-4 text-lg font-bold">Category</h4>
           <span class="rounded-[8px] bg-[var(--cls-black)] p-[8px] text-sm"
             >Adventure</span
-          >
-          <span class="rounded-[8px] bg-[var(--cls-black)] p-[8px] text-sm"
-            >Horror</span
           >
         </div>
         <div
@@ -100,26 +80,26 @@
           <div class="grid grid-cols-1 gap-2 md:flex md:flex-row md:py-5">
             <div>
               <img
-                src="/assets/book-cover-eclipes_vol34.jpg"
+                src="/assets/sheik.jpg"
                 alt="book-cover"
                 class="mb-2.5 shadow-xl md:max-w-[50%] md:place-self-center"
               />
               <p class="flex flex-col justify-center md:text-center">
-                <span> Eclipse Hunters Vol.34 </span>
-                <span>Kenji Nakamura</span>
+                <span>Sheik and the Unknown Abyss, Volume 1 </span>
+                <span>Toshiro Fujita</span>
                 <span>฿160</span>
               </p>
             </div>
 
             <div>
               <img
-                src="/assets/book-cover-eclipes_vol20.jpg"
+                src="/assets/supernova.jpg"
                 alt="book-cover"
                 class="mb-2.5 shadow-xl md:max-w-[50%] md:place-self-center"
               />
               <p class="flex flex-col justify-center md:text-center">
-                <span> Eclipse Hunters Vol.20 </span>
-                <span>Kenji Nakamura</span>
+                <span> Supernova Volume 1 </span>
+                <span>Takeshi Ito</span>
                 <span>฿160</span>
               </p>
             </div>
@@ -127,5 +107,15 @@
         </div>
       </div>
     </section>
+    <div
+      class="fixed bottom-0 flex w-[100%] flex-row justify-between overflow-hidden bg-[var(--cls-lightgreen)] p-1"
+    >
+      <p class="p-2 text-2xl text-[var(--cls-white)]">฿160.00</p>
+      <button
+        class="my-1 rounded-lg bg-[var(--cls-blue)] px-4 text-lg text-white shadow hover:bg-[var(--cls-darkblue)]"
+      >
+        Add to Cart
+      </button>
+    </div>
   </body>
 </html>
