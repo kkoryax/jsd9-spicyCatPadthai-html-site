@@ -6,12 +6,6 @@
     <link rel="stylesheet" href="/stylesheet.css" />
     <title>Katsu Book</title>
   </head>
-  <!-- <style>
-    * {
-      outline-color: crimson;
-      outline-style: dotted;
-    }
-  </style> -->
   <body>
     <header>
       <div class="nav-bar flex h-[64px] flex-row justify-between py-1">
@@ -32,7 +26,10 @@
             />
           </svg>
 
-          <div class="flex flex-row items-center max-sm:hidden">
+          <a
+            href="/html/home.html"
+            class="flex flex-row items-center max-md:hidden"
+          >
             <img
               src="/assets/logo_katsubook_no-text.png"
               alt="onlyLogo"
@@ -43,12 +40,14 @@
               alt="onlyLogoText"
               class="h-[60%]"
             />
-          </div>
-          <img
-            src="/assets/logo_katsubook_no-text.png"
-            alt="LOGO"
-            class="max-h-10 place-self-center md:hidden"
-          />
+          </a>
+          <a href="/html/home.html" class="flex flex-row items-center">
+            <img
+              src="/assets/logo_katsubook_no-text.png"
+              alt="LOGO"
+              class="max-h-10 place-self-center md:hidden"
+            />
+          </a>
         </div>
 
         <div class="flex flex-row justify-end space-x-10">
@@ -62,7 +61,10 @@
             class="my-2 block w-[35%] rounded-xl bg-[#2c3930] px-[16px] py-2 text-center hover:bg-[#2c393095] max-sm:hidden"
             >Register</a
           >
-          <button class="flex items-center">
+          <button
+            class="flex items-center"
+            onclick="window.location.href='/html/purchase.html';"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="auto"
@@ -90,6 +92,7 @@
           </button>
         </div>
       </div>
+
       <!-- Top Navigation Menu -->
       <div class="relative overflow-hidden text-sm">
         <div
@@ -106,6 +109,7 @@
             class="mb-6 block w-[40%] justify-self-center rounded-xl bg-[#2c3930] p-3 text-center hover:bg-[#2c393095] md:hidden"
             >Register</a
           >
+
           <!-- Search Bar -->
           <div class="mx-auto w-full max-w-[300px] basis-2/3">
             <div class="relative mt-10">
@@ -139,19 +143,19 @@
                 >
                   <ul id="dropdownOptions">
                     <li
-                      class="cursor-pointer px-4 py-2 text-sm hover:bg-slate-50"
+                      class="cursor-pointer px-4 py-2 text-sm hover:bg-gray-900"
                       data-value="Title"
                     >
                       Title
                     </li>
                     <li
-                      class="cursor-pointer px-4 py-2 text-sm hover:bg-slate-50"
+                      class="cursor-pointer px-4 py-2 text-sm hover:bg-gray-900"
                       data-value="Author"
                     >
                       Author
                     </li>
                     <li
-                      class="cursor-pointer px-4 py-2 text-sm hover:bg-slate-50"
+                      class="cursor-pointer px-4 py-2 text-sm hover:bg-gray-900"
                       data-value="Category"
                     >
                       Category
