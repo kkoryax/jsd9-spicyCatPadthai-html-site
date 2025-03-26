@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katsu Book</title>
+    <link rel="stylesheet" href="/stylesheet.css" />
+  </head>
+  <body>
+    <section class="md:flex md:max-w-400 md:justify-self-center">
+      <div
+        class="grid grid-cols-1 gap-4 md:gap-10 md:p-10 md:px-20 lg:grid-cols-2"
+      >
+        <div class="grid grid-cols-1">
+          <img
+            src="/assets/supernova_2.jpg"
+            alt="book-cover"
+            class="w-[100%] object-contain p-5 shadow-lg md:place-self-center"
+          />
+        </div>
+        <div
+          class="space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] p-[32px] py-12 text-[var(--cls-white)] max-sm:pt-[30px]"
+        >
+          <p class="text-2xl font-bold md:text-3xl">Supernova, Volume 2</p>
+          <p class="text-2xl">Kenji Suzuki</p>
+          <p class="py-5 text-3xl md:text-5xl">฿160.00</p>
+
+          <div class="flex flex-row space-x-8 pb-15 md:items-center md:py-5">
+            <p class="text-xl md:text-2xl">Quantity</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="25px"
+              viewBox="0 -960 960 960"
+              width="25px"
+              fill="#e3e3e3"
+              class="bg-[#939393]"
+            >
+              <path d="M200-440v-80h560v80H200Z" />
+            </svg>
+            <span class="place-self-center md:text-2xl">1</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="25px"
+              viewBox="0 -960 960 960"
+              width="25px"
+              fill="#e3e3e3"
+              class="bg-[#939393]"
+            >
+              <path
+                d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+              />
+            </svg>
+          </div>
+          <button
+            class="mb-4 rounded-lg bg-[var(--cls-blue)] px-4 py-2 text-lg text-white shadow hover:bg-[var(--cls-darkblue)] md:mt-10 md:text-2xl"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div
+          class="space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] px-[24px] py-[32px] text-[var(--cls-white)] md:mb-[50px]"
+        >
+          <h3 class="text-xl font-bold">Description</h3>
+          <p class="mb-5">
+            Young space explorer continues their journey, venturing into the
+            depths of the cosmos. They encounter fascinating celestial wonders,
+            learn about the mysteries of the universe, and face new challenges
+            as they navigate the vast expanse of space.
+          </p>
+
+          <h4 class="mb-4 text-lg font-bold">Category</h4>
+          <span class="rounded-[8px] bg-[var(--cls-black)] p-[8px] text-sm"
+            >Adventure</span
+          >
+        </div>
+        <div
+          class="mb-[50px] flex flex-col gap-3 space-y-2 rounded-[10px] bg-[var(--cls-lightbrown)] px-[24px] py-[16px] text-[var(--cls-white)] md:pt-[18px]"
+        >
+          <h3>Other books you may like:</h3>
+          <div class="grid grid-cols-1 gap-2 md:flex md:flex-row md:py-5">
+            <div>
+              <img
+                src="/assets/sheik.jpg"
+                alt="book-cover"
+                class="mb-2.5 shadow-xl md:max-w-[50%] md:place-self-center"
+              />
+              <p class="flex flex-col justify-center md:text-center">
+                <span>Sheik and the Unknown Abyss, Volume 1 </span>
+                <span>Toshiro Fujita</span>
+                <span>฿160</span>
+              </p>
+            </div>
+
+            <div>
+              <img
+                src="/assets/supernova.jpg"
+                alt="book-cover"
+                class="mb-2.5 shadow-xl md:max-w-[50%] md:place-self-center"
+              />
+              <p class="flex flex-col justify-center md:text-center">
+                <span> Supernova Volume 1 </span>
+                <span>Takeshi Ito</span>
+                <span>฿160</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="fixed bottom-0 flex w-[100%] flex-row justify-between overflow-hidden bg-[var(--cls-lightgreen)] p-1"
+    >
+      <p class="p-2 text-2xl text-[var(--cls-white)]">฿160.00</p>
+      <button
+        class="my-1 rounded-lg bg-[var(--cls-blue)] px-4 text-lg text-white shadow hover:bg-[var(--cls-darkblue)]"
+      >
+        Add to Cart
+      </button>
+    </div>
+  </body>
+</html>
