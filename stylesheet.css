@@ -47,6 +47,6 @@ h3 {
     @apply text-[var(--cls-cream)] bg-[var(--cls-lightgreen)] px-[24px];
   }
   .footer {
-    @apply bg-[var(--cls-darkgreen)] px-[24px] pt-[16px] text-[var(--cls-cream)];
+    @apply bg-[var(--cls-darkgreen)] px-[24px] pt-[48px] text-[var(--cls-cream)];
   }
 }
