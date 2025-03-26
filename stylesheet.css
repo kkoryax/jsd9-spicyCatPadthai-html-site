@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-* {
+ /* * {
     outline: red solid 1px;
-}
+} */
+
 
 :root {
 /* / Base Color */
@@ -36,7 +37,6 @@
     @apply px-4 py-2 rounded-lg text-white bg-blue-500;
   }
 }
-
 @layer utilities {
   /* / utility classes /
   / login /
