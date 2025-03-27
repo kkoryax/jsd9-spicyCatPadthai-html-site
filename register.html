@@ -27,7 +27,7 @@
             </svg>
 
             <a
-              href="/html/home.html"
+              href="/home.html"
               class="flex flex-row items-center max-md:hidden"
             >
               <img
@@ -52,18 +52,18 @@
 
           <div class="flex flex-row justify-end space-x-10">
             <a
-              href="/html/login.html"
+              href="/login.html"
               class="my-2 block w-[35%] rounded-xl bg-[#dcd7c9] px-[16px] py-2 text-center text-[#1e1e1e] hover:bg-[#dcd7c97c] max-sm:hidden"
               >Sign in</a
             >
             <a
-              href="/html/register.html"
+              href="/register.html"
               class="my-2 block w-[35%] rounded-xl bg-[#2c3930] px-[16px] py-2 text-center hover:bg-[#2c393095] max-sm:hidden"
               >Register</a
             >
             <button
               class="flex items-center"
-              onclick="window.location.href='/html/purchase.html';"
+              onclick="window.location.href='/purchase.html';"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -234,36 +234,96 @@
         </script>
       </header>
 
-    <main class="flex flex-col justify-center items-center bg-[var(--cls-cream)] md:flex-row md:h-screen md:gap-8 md:mx-8">
-        <section class="flex p-8 justify-center items-center md:flex-col">
-            <img src="/assets/logo_katsubook.png" alt=""
+    <main class="flex flex-col bg-[var(--cls-cream)] h-screen w-screen justify-center items-center">
+        <section class="flex p-8 justify-center items-center md:hidden">
+            <img src="/assets/logo_katsubook.png" alt="logo Katsu Book"
             class="w-50">
-            <p class="hidden justify-center items-center md:flex">Welcome to bookstore Everything in One place</p>
         </section>
-        <section
-            class="flex flex-col justify-center items-center w-screen h-fit mt-4 py-8 bg-[var(--cls-lightbrown)] rounded-t-3xl md:rounded-3xl md:w-105 md:pt-16">
-            <h2 class="text-3xl font-bold md:mb-4">Login</h2>
-            <p class="flex md:hidden justify-center items-center text-center p-4 w-[30ch]">Welcome to bookstore Everything in One place</p>
-            <form action="/index.html" class="flex flex-col justify-center items-center" method="get">
-                <input type="email" placeholder="Email"
-                    class="px-4 py-1 w-80 bg-[var(--cls-white)] mb-4 md:w-80" required>
-                <input type="password" placeholder="Password"
-                    class="px-4 py-1 w-80 bg-[var(--cls-white)] mb-4 md:w-80" required>
-                <a href="/html/register.html"
-                    class="mb-2">
-                    Forget your password?</a>
-                <button type="submit"
-                class="font-bold px-24 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-lightgreen)] hover:cursor-pointer hover:bg-[var(--cls-darkgreen)]">
-                Login</button>
-                <div class="grid grid-cols-3 gap-4 mb-4 items-center justify-center">
-                    <hr>
-                    <p>OR</p>
-                    <hr>
-                </div>
-                <a href="/html/register.html"
-                class="font-bold px-20 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-blue)] hover:cursor-pointer hover:bg-[var(--cls-darkblue)]">
-                New Account</a>
-            </form>
+        <section class="flex flex-col justify-center pb-8 rounded-t-2xl bg-[var(--cls-lightbrown)] w-screen md:h-fit md:w-120 md:rounded-2xl">
+            <h2 class="text-2xl font-bold text-center m-8 md:text-4xl">Register</h2>
+            <div class="flex justify-center items-center">
+                <form action="/login.html" method="post"
+                    class="flex flex-col gap-4 justify-center items-start">
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="first_name" class="block w-35 text-right">First Name :</label>
+                        <input id="first_name" type="text" placeholder="Your First Name"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="last_name" class="block w-35 text-right">Last Name :</label>
+                        <input id="last_name" type="text" placeholder="Your Last Name"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="date_of_birth" class="block w-35 text-right">Birth Date :</label>
+                        <input id="date_of_birth" type="date" placeholder=""
+                            class="w-53 px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="gender" class="block w-35 text-right">Gender :</label>
+                        <ul class="flex flex-row gap-4">
+                            <li class="flex flex-row text-center gap-2">
+                                <input type="radio" id="gender_male" name="gender">
+                                <p>M</p>
+                            </li>
+                            <li class="flex flex-row text-center gap-2">
+                                <input type="radio" id="gender_female" name="gender">
+                                <p>F</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="email" class="block w-35 text-right">Email :</label>
+                        <input id="email" type="email" placeholder="Your Email"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="password" class="block w-35 text-right">Password :</label>
+                        <input type="password" placeholder="Your Password"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="confirm_password" class="block w-35 text-right">Confirm Password :</label>
+                        <input type="password" placeholder="Confirm Password"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="address" class="block w-35 text-right">Address :</label>
+                        <input id="address" type="text" placeholder="Your Address"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="phone_number" class="block w-35 text-right">Phone Number :</label>
+                        <input id="phone_number" type="tel" placeholder="Your Phone Number"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="city" class="block w-35 text-right">City :</label>
+                        <input type="text" placeholder="City"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <label for="country" class="block w-35 text-right">Country :</label>
+                        <input type="text" placeholder="country"
+                            class="px-2 py-1 bg-[var(--cls-white)]" required>
+                    </div>
+                    <div class="flex justify-center items-center ml-16 mt-4">
+                        <button type="submit"
+                            class="font-bold w-64 py-1 px-6 rounded-2xl text-[var(--cls-white)] bg-[var(--cls-blue)] hover:cursor-pointer hover:bg-[var(--cls-darkblue)]"
+                            >Create</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <section>
@@ -285,7 +345,7 @@
           <a>Return & Refund</a>
         </div>
         <div class="md:w-[60%]">
-          <a href="/html/about.html">
+          <a href="/about.html">
             <h3>About Us</h3>
           </a>
           <p class="w-[90%]">
@@ -295,7 +355,7 @@
           </p>
         </div>
         <div class="md:w-[60%]">
-          <a href="/html/about.html">
+          <a href="/about.html">
             <h3>Contact Us</h3>
           </a>
           <p class="w-[90%]">

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
-    <link rel="stylesheet" href="../stylesheet.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
             </svg>
 
             <a
-              href="/html/home.html"
+              href="/home.html"
               class="flex flex-row items-center max-md:hidden"
             >
               <img
@@ -52,18 +52,18 @@
 
           <div class="flex flex-row justify-end space-x-10">
             <a
-              href="/html/login.html"
+              href="/login.html"
               class="my-2 block w-[35%] rounded-xl bg-[#dcd7c9] px-[16px] py-2 text-center text-[#1e1e1e] hover:bg-[#dcd7c97c] max-sm:hidden"
               >Sign in</a
             >
             <a
-              href="/html/register.html"
+              href="/register.html"
               class="my-2 block w-[35%] rounded-xl bg-[#2c3930] px-[16px] py-2 text-center hover:bg-[#2c393095] max-sm:hidden"
               >Register</a
             >
             <button
               class="flex items-center"
-              onclick="window.location.href='/html/purchase.html';"
+              onclick="window.location.href='/purchase.html';"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -234,138 +234,38 @@
         </script>
       </header>
 
-    <!-- Desktop version -->
-<header></header>
-<main class="hidden sm:flex flex-col justify-center p-8  min-h-screen w-full">
-
-  <h1 class="p-4 text-center font-extrabold text-3xl w-2/5">Generation Thailand JSD9</h1>
-  <!-- Catalog banner Desktop -->
-  <div class ="flex flex-row">
-    <section class="catalog banner w-2/5 flex flex-col">
-
-        <div class="text-center">
-          <img
-            src="../assets/jsd.webp"
-            alt="jsd-book"
-            class="py-8 w-auto px-12"
-          >
-          <p class ="p-8 text-balanced tracking-normal">Generation Thailand JSD9 follows a group of diverse individuals in Thailand who embark on an intense online bootcamp to learn software development. The story delves into their personal and professional struggles as they navigate the challenges of coding, imposter syndrome, and the pressures of the tech industry. Through their shared journey, they form unexpected bonds of friendship, discover their strengths, and ultimately face the uncertainty of their future careers.</p>
-        </div>
-    </section>
-
-    <!-- Catalog Volume Desktop -->
-    <section class="catalog-volume w-3/5 ">
-      <div class="profile-details  p-4  rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
-        <h2 class="p-4 text-center text-2xl font-bold">Catalog</h2>
-        <div class="grid grid-cols-2 gap-0  lg:grid-cols-3">
-            <a href="/html/add-to-cart.html">
-                <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                    <img
-                src="../assets/jsd.webp"
-                alt="jsd1"
-                class="pb-4"
-                >
-                    <p class="text-center">JSD9 Vol.1</p>
+    <main class="flex flex-col justify-center items-center bg-[var(--cls-cream)] md:flex-row md:h-screen md:gap-8 md:mx-8">
+        <section class="flex p-8 justify-center items-center md:flex-col">
+            <img src="/assets/logo_katsubook.png" alt=""
+            class="w-50">
+            <p class="hidden justify-center items-center md:flex">Welcome to bookstore Everything in One place</p>
+        </section>
+        <section
+            class="flex flex-col justify-center items-center w-screen h-fit mt-4 py-8 bg-[var(--cls-lightbrown)] rounded-t-3xl md:rounded-3xl md:w-105 md:pt-16">
+            <h2 class="text-3xl font-bold md:mb-4">Login</h2>
+            <p class="flex md:hidden justify-center items-center text-center p-4 w-[30ch]">Welcome to bookstore Everything in One place</p>
+            <form action="/index.html" class="flex flex-col justify-center items-center" method="get">
+                <input type="email" placeholder="Email"
+                    class="px-4 py-1 w-80 bg-[var(--cls-white)] mb-4 md:w-80" required>
+                <input type="password" placeholder="Password"
+                    class="px-4 py-1 w-80 bg-[var(--cls-white)] mb-4 md:w-80" required>
+                <a href="/register.html"
+                    class="mb-2">
+                    Forget your password?</a>
+                <button type="submit"
+                class="font-bold px-24 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-lightgreen)] hover:cursor-pointer hover:bg-[var(--cls-darkgreen)]">
+                Login</button>
+                <div class="grid grid-cols-3 gap-4 mb-4 items-center justify-center">
+                    <hr>
+                    <p>OR</p>
+                    <hr>
                 </div>
-            </a>
-            <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                <img
-            src="../assets/jsd_2.webp"
-            alt="jsd2"
-            class="pb-4"
-            >
-                <p class="text-center">JSD9 Vol.2</p>
-            </div>
-            <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                <img
-                src="../assets/jsd_3.webp"
-                alt="jsd3"
-                class="pb-4"
-            >
-                <p class="text-center">JSD9 Vol.3</p>
-            </div>
-            <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                <img
-                src="../assets/jsd_4.webp"
-                alt="jsd4"
-                class="pb-4"
-            >
-                <p class="text-center">JSD9 Vol.4</p>
-            </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-</main>
-<footer></footer>
-    <!-- mobile version -->
-    <header></header>
-    <main class="sm:hidden h-auto: w-auto">
-        <!-- Catalog banner Mobile -->
-         <section class="Catalog banner">
-            <div class="flex-col">
-                <h1 class="py-8 text-center font-extrabold text-3xl">Generation Thailand JSD9</h1>
-                <img
-                src="../assets/jsd.webp"
-                alt="jsd-book"
-                class="py-8 w-auto px-16"
-                >
-
-                <p class ="pb-8 px-8 text-balanced tracking-normal">Generation Thailand JSD9 follows a group of diverse individuals in Thailand who embark on an intense online bootcamp to learn software development. The story delves into their personal and professional struggles as they navigate the challenges of coding, imposter syndrome, and the pressures of the tech industry. Through their shared journey, they form unexpected bonds of friendship, discover their strengths, and ultimately face the uncertainty of their future careers.</p>
-
-            </div>
-         </section>
-
-
-         <!-- Catalog volume Mobile -->
-         <section class="catalog-volume py-8 px-4  rounded-2xl bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
-            <h2 class="pb-4 text-center text-2xl font-bold">Catalog</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg" onclick="location.href='/html/add-to-cart.html';">
-                    <img
-                src="../assets/jsd.webp"
-                alt="jsd1"
-                class="pb-4"
-                >
-                    <p class="text-center">JSD9 Vol.1</p>
-                </div>
-                <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                    <img
-                src="../assets/jsd_2.webp"
-                alt="jsd2"
-                class="pb-4"
-                >
-                    <p class="text-center">JSD9 Vol.2</p>
-                </div>
-                <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                    <img
-                    src="../assets/jsd_3.webp"
-                    alt="jsd3"
-                    class="pb-4"
-                >
-                    <p class="text-center">JSD9 Vol.3</p>
-                </div>
-                <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
-                    <img
-                    src="../assets/jsd_4.webp"
-                    alt="jsd4"
-                    class="pb-4"
-                >
-                    <p class="text-center">JSD9 Vol.4</p>
-                </div>
-            </div>
-         </section>
-
-
-         <!-- See More Mobile -->
-          <section class ="text-center">
-            <div>
-              <button onclick="location.href='#';" class=" px-4 m-4 bg-[var(--cls-blue)] text-[var(--cls-white)] rounded-2xl hover:bg-[var(--cls-darkblue)] cursor-pointer">See More →</button>
-            </div>
-          </section>
+                <a href="/register.html"
+                class="font-bold px-20 py-2 mb-4 rounded-4xl text-[var(--cls-white)] bg-[var(--cls-blue)] hover:cursor-pointer hover:bg-[var(--cls-darkblue)]">
+                New Account</a>
+            </form>
+        </section>
     </main>
-    <footer></footer>
     <section>
       <div class="footer flex flex-col gap-5 md:pb-10 lg:flex-row">
         <div class="md:w-[60%]">
@@ -385,7 +285,7 @@
           <a>Return & Refund</a>
         </div>
         <div class="md:w-[60%]">
-          <a href="/html/about.html">
+          <a href="/about.html">
             <h3>About Us</h3>
           </a>
           <p class="w-[90%]">
@@ -395,7 +295,7 @@
           </p>
         </div>
         <div class="md:w-[60%]">
-          <a href="/html/about.html">
+          <a href="/about.html">
             <h3>Contact Us</h3>
           </a>
           <p class="w-[90%]">

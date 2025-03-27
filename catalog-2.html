@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | KatsuBook</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
             </svg>
 
             <a
-              href="/index.html"
+              href="/home.html"
               class="flex flex-row items-center max-md:hidden"
             >
               <img
@@ -234,91 +234,110 @@
         </script>
       </header>
 
+    <!-- Desktop version -->
+<header></header>
+<main class="hidden sm:flex flex-col justify-center p-8  min-h-screen w-full">
+
+  <h1 class="p-4 text-center font-extrabold text-3xl w-2/5">Super Nova</h1>
+  <!-- Catalog banner Desktop -->
+  <div class ="flex flex-row">
+    <section class="catalog banner w-2/5 flex flex-col">
+
+        <div class="text-center">
+          <img
+            src="/assets/supernova_2.jpg"
+            alt="jsd-book"
+            class="py-8 w-auto px-12"
+          >
+          <p class ="p-8 text-balanced tracking-normal">Young space explorer continues their journey, venturing into the depths of the cosmos. They encounter fascinating celestial wonders, learn about the mysteries of the universe, and face new challenges as they navigate the vast expanse of space.</p>
+        </div>
+    </section>
+
+    <!-- Catalog Volume Desktop -->
+    <section class="catalog-volume w-3/5 ">
+      <div class="profile-details  p-4  rounded-lg bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
+        <h2 class="p-4 text-center text-2xl font-bold">Catalog</h2>
+        <div class="grid grid-cols-2 gap-0  lg:grid-cols-3">
+          <a href="/add-to-cart-2.html">
+            <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
+              <img
+              src="/assets/supernova_2.jpg"
+              alt="jsd4"
+              class="pb-4"
+              >
+              <p class="text-center">Super Nova Vol.2</p>
+            </div>
+          </a>
+          <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
+            <img
+            src="/assets/supernova.jpg"
+            alt="jsd3"
+            class="pb-4"
+            >
+            <p class="text-center">Super Nova Vol.1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+<footer></footer>
+    <!-- mobile version -->
+    <header></header>
+    <main class="sm:hidden h-auto: w-auto">
+        <!-- Catalog banner Mobile -->
+         <section class="Catalog banner">
+            <div class="flex-col">
+                <h1 class="py-8 text-center font-extrabold text-3xl">Super Nova</h1>
+                <img
+                src="/assets/supernova_2.jpg"
+                alt="supernova-book"
+                class="py-8 w-auto px-16"
+                >
+
+                <p class ="pb-8 px-8 text-balanced tracking-normal">Young space explorer continues their journey, venturing into the depths of the cosmos. They encounter fascinating celestial wonders, learn about the mysteries of the universe, and face new challenges as they navigate the vast expanse of space.</p>
+
+            </div>
+         </section>
 
 
-        <!-- Slider Section-->
-        <section class="flex flex-row justify-center items-center p-8 bg-[var(--cls-cream)]">
-            <article class="flex flex-row justify-center items-center p-1 max-w-full">
-                <div class="w-full h-60 md:h-80 lg:h-120 z-1">
-                    <img src="/assets/bangkoklegacy_banner.jpg" alt="" class="w-full h-full object-cover object-center">
+         <!-- Catalog volume Mobile -->
+         <section class="catalog-volume py-8 px-4  rounded-2xl bg-[var(--cls-lightbrown)] text-[var(--cls-white)] ">
+            <h2 class="pb-4 text-center text-2xl font-bold">Catalog</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="/add-to-cart-2.html">
+                <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
+                  <img
+                  src="/assets/supernova_2.jpg"
+                  alt="jsd4"
+                  class="pb-4"
+                  >
+                  <p class="text-center">Super Nova Vol.2</p>
                 </div>
-        </section>
-        <section class="flex flex-col justify-center items-center w-full h-full">
-            <div class="flex flex-col justify-center items-start mb-4">
-                <h2 class="text-2xl font-bold mb-2 ml-20 w-fit md:text-4xl">New Release <span class="text-lg md:text-2xl">></span></h2>
-                <!--New Release Section-->
-                <article
-                class="flex flex-row flex-wrap justify-center p-8 mb-4 gap-8 w-full rounded-3xl bg-[var(--cls-lightbrown)] md:max-w-365">
-                    <div
-                    class="w-50 h-50 hover:cursor-pointer md:w-80 md:h-80" onclick="window.location.href='/catalog.html'">
-                        <img src="/assets/jsd_4.jpg" alt="Jsd 4" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">
-                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>JSD Vol.4</p>
-                    </div>
-                    <div
-                    class="hidden md:flex md:flex-col w-50 hover:cursor-pointer md:w-80 md:h-80" onclick="window.location.href='/catalog-2.html'">
-                        <img src="/assets/supernova_2.jpg" alt="Super Nova" class="hover:brightness-75">
-                        <p class="hidden md:flex justify-center items-center mt-1 font-semibold">
-                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>Supernova Vol.2</p>
-                    </div>
-                    <div
-                    class="w-50 h-50 hover:cursor-pointer md:w-80 md:h-80" onclick="window.location.href='/catalog-3.html'" class="hover:brightness-75">
-                        <img src="/assets/sheik_12.jpg" alt="Sheik" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">
-                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>Sheik Vol.12</p>
-                    </div>
-                    <div
-                    class="hidden md:flex md:flex-col w-50 hover:cursor-pointer md:w-80 md:h-80">
-                        <img src="/assets/foodstriker_4.jpg" alt="Food Striker" class="hover:brightness-75">
-                        <p class="hidden md:flex  justify-center items-center mt-1 font-semibold">
-                            <span class="font-bold mx-2 text-[var(--cls-white)]">[New]</span>Food Striker Vol.4</p>
-                    </div>
-                </article>
+              </a>
+              <div class="p-8 mx-auto hover:bg-[var(--cls-darkbrown)] cursor-pointer rounded-lg">
+                <img
+                src="/assets/supernova.jpg"
+                alt="jsd3"
+                class="pb-4"
+                >
+                <p class="text-center">Super Nova Vol.1</p>
+              </div>
             </div>
-            <div class="flex flex-col justify-center items-start mb-4">
-                <h2 class="text-2xl font-bold mb-2 ml-20 w-fit md:text-4xl">All Content <span class="text-lg md:text-2xl">></span></h2>
-                <!--All content Section-->
-                <article
-                class="flex flex-row flex-wrap justify-center p-8 mb-4 gap-8 max-w-240 rounded-3xl bg-[var(--cls-lightbrown)] md:max-w-365">
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/bangkoklegacy.jpg" alt="bangkok legacy" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Bangkok Legacy</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/foodstriker.jpg" alt="food striker" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Food Striker</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/hikarilove.jpg" alt="hikari love" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Hikari love</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/jsd.jpg" alt="generation bootcamp" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">JSD</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/katanaway.jpg" alt="katana way" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Katanaway</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/sheik.jpg" alt="sheik" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Sheik</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/supernova.jpg" alt="Super Nova" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Super Nova</p>
-                    </div>
-                    <div class="outline hover:cursor-pointer w-50 h-50 md:w-80 md:h-80">
-                        <img src="/assets/untitled.jpg" alt="Untitled" class="hover:brightness-75">
-                        <p class="flex justify-center items-center mt-1 font-semibold">Untitled</p>
-                    </div>
-                </article>
+         </section>
+
+
+         <!-- See More Mobile -->
+          <section class ="text-center">
+            <div>
+              <button onclick="location.href='#';" class=" px-4 m-4 bg-[var(--cls-blue)] text-[var(--cls-white)] rounded-2xl hover:bg-[var(--cls-darkblue)] cursor-pointer">See More →</button>
             </div>
-        </section>
+          </section>
     </main>
-
-
-    <div class="footer flex flex-col gap-5 md:pb-10 lg:flex-row">
+    <footer></footer>
+    <section>
+      <div class="footer flex flex-col gap-5 md:pb-10 lg:flex-row">
         <div class="md:w-[60%]">
           <img
             src="/assets/logo_katsubook_onlytext.png"
