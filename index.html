@@ -54,7 +54,7 @@
             <a
               href="/login.html"
               class="my-2 block w-[35%] rounded-xl bg-[#dcd7c9] px-[16px] py-2 text-center text-[#1e1e1e] hover:bg-[#dcd7c97c] max-sm:hidden"
-              >Sign in</a
+              >Log in</a
             >
             <a
               href="/register.html"
@@ -96,17 +96,17 @@
         <!-- Top Navigation Menu -->
         <div class="relative overflow-hidden text-sm">
           <div
-            id="myLinks"
+            id="dropdownNav"
             class="hidden bg-[#3f4f44] pt-10 pb-30 leading-4 text-[#ffffff] no-underline"
           >
             <a
-              href="#signin"
-              class="mb-6 block w-[40%] justify-self-center rounded-xl bg-[#dcd7c9] p-3 text-center text-[#1e1e1e] hover:bg-[#dcd7c97c] md:hidden"
-              >Sign in</a
+              href="/login.html"
+              class="mb-6 block mx-15 items-center rounded-xl bg-[#dcd7c9] p-3 text-center text-[#1e1e1e] hover:bg-[#dcd7c97c] md:hidden"
+              >Log in</a
             >
             <a
-              href="#register"
-              class="mb-6 block w-[40%] justify-self-center rounded-xl bg-[#2c3930] p-3 text-center hover:bg-[#2c393095] md:hidden"
+              href="/register.html"
+              class="mb-6 block mx-15 rounded-xl bg-[#2c3930] p-3 text-center hover:bg-[#2c393095] md:hidden"
               >Register</a
             >
 
@@ -191,47 +191,6 @@
             </div>
           </div>
         </div>
-        <script>
-          function navFunction() {
-            const x = document.getElementById("myLinks")
-            if (x.style.display === "block") {
-              x.style.display = "none"
-            } else {
-              x.style.display = "block"
-            }
-          }
-          document
-            .getElementById("dropdownButton")
-            .addEventListener("click", function () {
-              const dropdownMenu = document.getElementById("dropdownMenu")
-              if (dropdownMenu.classList.contains("hidden")) {
-                dropdownMenu.classList.remove("hidden")
-              } else {
-                dropdownMenu.classList.add("hidden")
-              }
-            })
-
-          document
-            .getElementById("dropdownOptions")
-            .addEventListener("click", function (event) {
-              if (event.target.tagName === "LI") {
-                const dataValue = event.target.getAttribute("data-value")
-                document.getElementById("dropdownSpan").textContent = dataValue
-                document.getElementById("dropdownMenu").classList.add("hidden")
-              }
-            })
-
-          document.addEventListener("click", function (event) {
-            const isClickInside =
-              document.getElementById("dropdownButton").contains(event.target) ||
-              document.getElementById("dropdownMenu").contains(event.target)
-            const dropdownMenu = document.getElementById("dropdownMenu")
-
-            if (!isClickInside) {
-              dropdownMenu.classList.add("hidden")
-            }
-          })
-        </script>
       </header>
 
 
@@ -357,5 +316,46 @@
         <p class="py-[16px] md:hidden">&copy; 2025 Katsu Book</p>
       </div>
     </section>
+    <script>
+      function navFunction() {
+        const x = document.getElementById("dropdownNav")
+        if (x.style.display === "block") {
+          x.style.display = "none"
+        } else {
+          x.style.display = "block"
+        }
+      }
+      document
+        .getElementById("dropdownButton")
+        .addEventListener("click", function () {
+          const dropdownMenu = document.getElementById("dropdownMenu")
+          if (dropdownMenu.classList.contains("hidden")) {
+            dropdownMenu.classList.remove("hidden")
+          } else {
+            dropdownMenu.classList.add("hidden")
+          }
+        })
+
+      document
+        .getElementById("dropdownOptions")
+        .addEventListener("click", function (event) {
+          if (event.target.tagName === "LI") {
+            const dataValue = event.target.getAttribute("data-value")
+            document.getElementById("dropdownSpan").textContent = dataValue
+            document.getElementById("dropdownMenu").classList.add("hidden")
+          }
+        })
+
+      document.addEventListener("click", function (event) {
+        const isClickInside =
+          document.getElementById("dropdownButton").contains(event.target) ||
+          document.getElementById("dropdownMenu").contains(event.target)
+        const dropdownMenu = document.getElementById("dropdownMenu")
+
+        if (!isClickInside) {
+          dropdownMenu.classList.add("hidden")
+        }
+      })
+    </script>
 </body>
 </html>
